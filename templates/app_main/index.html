@@ -1,0 +1,162 @@
+{% extends 'app_main/base.html' %}
+{% load static %}
+{% block title %}Home {% endblock title %}
+
+{% block main_content %}
+<!-- Container -->
+<main class="ms-container">
+
+    <!-- Hero area -->
+        <div class="ms-hero">
+            <div class="ms-hero__caption">
+                <div class="ms-hero__title">
+                    <h1>Creative services<br> for creative people.</h1>
+                    <p class="ms-hero__subtitle">Continually productize excellent technology vis-a-vis holistic solutions. </p>
+                </div>
+            </div>
+        </div>
+    <!-- /Hero area -->
+
+    <!-- Works Grid -->
+        <section class="ms-section">
+
+        <!-- Sort -->
+            <ul class="filtr-btn">
+                <li data-filter="*" class="active"><h6 class="ms-btn">all</h6></li>
+                <li data-filter=".design"><h6 class="ms-btn">design</h6></li>
+                <li data-filter=".art"><h6 class="ms-btn">art</h6></li>
+                <li data-filter=".development"><h6 class="ms-btn">development</h6></li>
+            </ul>
+        <!-- /Sort -->
+        
+        <!-- Grid -->
+            <div class="ms-section__block ms-grid">
+            <div class="col-md-1 col-xs-12 grid-sizer"></div>
+
+            <!-- Work Item -->
+                <div class="grid-item anime-item work-item col-md-6 col-xs-12 design">
+                    <a href="#" class="box work-image" data-type="page-transition">
+                        <div class="box-cover">
+                            <div class="box-img" style="background-image: url({% static 'assets/images/works/w1.jpg' %})"></div>
+                            <div class="box-hover"></div>
+                        </div>
+                    </a>
+                    <a href="#" data-type="page-transition">
+                        <div class="work-info">
+                            <div class="box-inner">
+                                <span class="box-inner__cat">design</span>
+                                <h4 class="box-inner__title">Atmospheric Watercolor</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!-- /Work Item -->
+
+            <!-- Work Item -->
+                <div class="grid-item anime-item work-item col-md-6 col-xs-12 art">
+                    <a href="#" class="box work-image" data-type="page-transition">
+                        <div class="box-cover">
+                            <div class="box-img" style="background-image: url({% static 'assets/images/works/w2.jpg' %})"></div>
+                            <div class="box-hover"></div>
+                        </div>
+                    </a>
+                    <a href="#" data-type="page-transition">
+                        <div class="work-info">
+                            <div class="box-inner">
+                                <span class="box-inner__cat">art</span>
+                                <h4 class="box-inner__title">Conceptual Product Design</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!-- /Work Item -->
+
+            <!-- Work Item -->
+                <div class="grid-item anime-item work-item col-md-6 col-xs-12 development">
+                    <a href="#" class="box work-image" data-type="page-transition">
+                        <div class="box-cover">
+                            <div class="box-img" style="background-image: url({% static 'assets/images/works/w3.jpg' %})"></div>
+                            <div class="box-hover"></div>
+                        </div>
+                    </a>
+                    <a href="#" data-type="page-transition">
+                        <div class="work-info">
+                            <div class="box-inner">
+                                <span class="box-inner__cat">development</span>
+                                <h4 class="box-inner__title">Digital Illustrations</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!-- /Work Item -->
+
+            <!-- Work Item -->
+                <div class="grid-item anime-item work-item col-md-6 col-xs-12 design">
+                    <a href="#" class="box work-image" data-type="page-transition">
+                        <div class="box-cover">
+                            <div class="box-img" style="background-image: url({% static 'assets/images/works/w4.jpg' %})"></div>
+                            <div class="box-hover"></div>
+                        </div>
+                    </a>
+                    <a href="#" data-type="page-transition">
+                        <div class="work-info">
+                            <div class="box-inner">
+                                <span class="box-inner__cat">design</span>
+                                <h4 class="box-inner__title">Pop Culture Papercuts</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!-- /Work Item -->
+
+            <!-- Work Item -->
+                <div class="grid-item anime-item work-item col-md-6 col-xs-12 art">
+                    <a href="#" class="box work-image" data-type="page-transition">
+                        <div class="box-cover">
+                            <div class="box-img" style="background-image: url({% static 'assets/images/works/w5.jpg' %})"></div>
+                            <div class="box-hover"></div>
+                        </div>
+                    </a>
+                    <a href="#" data-type="page-transition">
+                        <div class="work-info">
+                            <div class="box-inner">
+                                <span class="box-inner__cat">art</span>
+                                <h4 class="box-inner__title">Geometric Sculptures</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!-- /Work Item -->
+
+            <!-- Work Item -->
+                <div class="grid-item anime-item work-item col-md-6 col-xs-12 development">
+                    <a href="" class="box work-image" data-type="page-transition">
+                        <div class="box-cover">
+                            <div class="box-img" style="background-image: url({% static 'assets/images/works/w6.jpg' %})"></div>
+                            <div class="box-hover"></div>
+                        </div>
+                    </a>
+                    <a href="#" data-type="page-transition">
+                        <div class="work-info">
+                            <div class="box-inner">
+                                <span class="box-inner__cat">development</span>
+                                <h4 class="box-inner__title">Beautiful Illustrated Portraits</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <!-- /Work Item -->
+
+            </div>
+        <!-- Grid -->
+        <div class="ms-section__block ms-align-center">
+            <a href="#" class="ms-btn__square" data-type="page-transition">load more</a>
+        </div>
+        </section>
+    <!-- /Works Grid -->
+
+    <!-- Back to top button -->
+    <a href="#" class="back-top"><i class="material-icons">arrow_upward</i></a>
+</main>
+<!-- /Container --> 
+{% endblock main_content %}

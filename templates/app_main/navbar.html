@@ -1,0 +1,48 @@
+{% load static %}
+<header class="ms-header">
+    <nav class="ms-nav">
+        <div class="ms-logo">
+            <a href="{% url 'app_main:home' %}" data-type="page-transition">
+                <img src="{% static 'assets/images/h-logo.svg' %}" alt="logo">
+            </a>
+        </div>
+        <!-- Mobile Menu Button -->
+            <button class="nav__btn">
+                <span class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </span>
+                <span class="cross">
+                    <span class="cross__line"></span>
+                    <span class="cross__line"></span>
+                </span>
+            </button>
+        <!-- Mobile Menu Button -->
+        <ul class="ms-navbar">
+            <li class="ms-nav-item link active">
+                <a href="#">Portfolio</a>
+                <ul class="ms-submenu">
+                    <li class="ms-nav-item link">
+                        <a href="#" data-type="page-transition">Works grid</a>
+                    </li>
+                    <li class="ms-nav-item link">
+                        <a href="#" data-type="page-transition">Simple images</a>
+                    </li>
+                    <li class="ms-nav-item link">
+                        <a href="#" data-type="page-transition">Gallery</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ms-nav-item link">
+                <a href="#" data-type="page-transition">Blog</a>
+            </li>
+            <li class="ms-nav-item link">
+                <a href="#" data-type="page-transition">About</a>
+            </li>
+            <li class="ms-nav-item link">
+                <a href="#" data-type="page-transition">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
