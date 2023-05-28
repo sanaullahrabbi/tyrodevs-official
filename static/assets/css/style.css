@@ -469,8 +469,9 @@ input[type=submit]:hover {
 }
 
 .ms-logo img {
-    height: 45px;
+    height: 85px;
     width: auto;
+    margin-left: 50px;
     backface-visibility: hidden
 }
 
@@ -1773,7 +1774,7 @@ label.error {
     }
 
     .ms-logo img {
-        height: 36px
+        height: 66px
     }
 
     .ms-hero:not(.ms-hero__poster) {
